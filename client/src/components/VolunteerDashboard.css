@@ -1,0 +1,423 @@
+
+.volunteer-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  color: #182230;
+}
+
+.volunteer-welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 28px;
+  border-radius: 16px;
+  background: linear-gradient(120deg, #102a43, #176b87);
+  color: #fff;
+}
+
+.volunteer-welcome h2 {
+  margin: 8px 0;
+  font-size: 27px;
+}
+
+.volunteer-welcome p {
+  margin: 0;
+  color: #e1edf4;
+  line-height: 1.6;
+}
+
+.volunteer-eyebrow {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+}
+
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  padding: 9px 13px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 800;
+  background: #e0f7e9;
+  color: #14713c;
+}
+
+.availability-badge.busy {
+  background: #fff0d5;
+  color: #925500;
+}
+
+.availability-badge.offline {
+  background: #e9edf2;
+  color: #526171;
+}
+
+.volunteer-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.volunteer-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 22px;
+  border: 1px solid #e5eaf0;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 3px 12px rgb(16 42 67 / 4%);
+}
+
+.volunteer-stat-icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #edf5fa;
+  font-size: 23px;
+}
+
+.volunteer-stat-card p {
+  margin: 0 0 7px;
+  color: #637083;
+  font-size: 13px;
+}
+
+.volunteer-stat-card h3 {
+  margin: 0;
+  font-size: 27px;
+}
+
+.volunteer-panel {
+  padding: 23px;
+  border: 1px solid #e5eaf0;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 3px 12px rgb(16 42 67 / 3%);
+}
+
+.volunteer-panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.volunteer-panel-heading h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.volunteer-panel-heading p {
+  margin: 0;
+  color: #758195;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.availability-info {
+  padding: 13px 15px;
+  border-radius: 10px;
+  background: #f4f8fb;
+  color: #526171;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.refresh-button {
+  padding: 10px 15px;
+  border: 1px solid #dbe3eb;
+  border-radius: 9px;
+  background: #fff;
+  color: #176b87;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.refresh-button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.volunteer-empty {
+  padding: 25px 12px;
+  text-align: center;
+  color: #778395;
+  line-height: 1.6;
+}
+
+.empty-icon {
+  font-size: 30px;
+}
+
+.volunteer-empty h4 {
+  margin: 10px 0 4px;
+  color: #27384a;
+}
+
+.volunteer-task-list,
+.volunteer-notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.volunteer-task-card {
+  padding: 20px;
+  border: 1px solid #e4eaf0;
+  border-radius: 12px;
+}
+
+.task-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.task-type {
+  color: #176b87;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.task-card-top h4 {
+  margin: 7px 0;
+  font-size: 17px;
+}
+
+.task-status {
+  display: inline-block;
+  padding: 6px 9px;
+  border-radius: 20px;
+  background: #e8f1ff;
+  color: #2457a7;
+  font-size: 10px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.task-status.accepted,
+.task-status.on-the-way,
+.task-status.arrived,
+.task-status.work-in-progress {
+  background: #fff0d5;
+  color: #925500;
+}
+
+.task-status.work-completed,
+.task-status.completed {
+  background: #e0f7e9;
+  color: #14713c;
+}
+
+.task-status.rejected,
+.task-status.cancelled {
+  background: #ffe8e8;
+  color: #a52a2a;
+}
+
+.task-description {
+  color: #627084;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.task-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px 18px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #f7f9fb;
+}
+
+.task-details p {
+  margin: 4px 0;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.task-map-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #176b87;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.task-map-link:hover {
+  text-decoration: underline;
+}
+
+.task-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.task-action-button {
+  padding: 11px 15px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.task-action-button.primary {
+  background: #14713c;
+  color: #fff;
+}
+
+.task-action-button.danger {
+  background: #fff;
+  border-color: #e6b7b7;
+  color: #a52a2a;
+}
+
+.task-action-button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.completed-note {
+  margin: 15px 0 0;
+  color: #14713c;
+  font-weight: 700;
+}
+
+.rejected-note {
+  margin: 15px 0 0;
+  color: #a52a2a;
+  font-weight: 700;
+}
+
+.volunteer-notification {
+  display: flex;
+  gap: 13px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #f7f9fb;
+}
+
+.volunteer-notification > span {
+  font-size: 20px;
+}
+
+.volunteer-notification strong {
+  font-size: 13px;
+}
+
+.volunteer-notification p {
+  margin: 5px 0;
+  color: #69778a;
+  font-size: 12px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.volunteer-notification small {
+  color: #8994a3;
+  font-size: 11px;
+}
+
+.volunteer-message {
+  padding: 13px 15px;
+  border-radius: 9px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.volunteer-message.error {
+  background: #fff0f0;
+  color: #a52a2a;
+}
+
+.volunteer-message.success {
+  background: #e6f8ec;
+  color: #14713c;
+}
+
+@media (max-width: 1050px) {
+  .volunteer-stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .volunteer-welcome {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 21px;
+  }
+
+  .volunteer-stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .volunteer-panel {
+    padding: 16px;
+  }
+
+  .volunteer-panel-heading {
+    align-items: flex-start;
+  }
+
+  .task-card-top {
+    flex-direction: column;
+  }
+
+  .task-details {
+    grid-template-columns: 1fr;
+  }
+
+  .task-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .task-action-button {
+    width: 100%;
+  }
+}
+.volunteer-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.volunteer-logout-button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #dc2626;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.volunteer-logout-button:hover {
+  background: #b91c1c;
+}
+
+.volunteer-logout-button:focus-visible {
+  outline: 2px solid #dc2626;
+  outline-offset: 3px;
+}

@@ -1,0 +1,402 @@
+
+.shelters-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  color: #172033;
+}
+
+.shelters-heading,
+.shelter-table-heading,
+.shelter-form-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.shelters-heading h2 {
+  margin: 3px 0 6px;
+  font-size: 27px;
+}
+
+.shelters-heading p,
+.shelter-table-heading p,
+.shelter-form-heading p {
+  margin: 0;
+  color: #718096;
+  font-size: 13px;
+}
+
+.shelters-eyebrow {
+  color: #b45309 !important;
+  font-size: 11px !important;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.shelters-heading-actions,
+.shelter-form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.shelter-primary-btn,
+.shelter-secondary-btn {
+  border: 0;
+  border-radius: 9px;
+  padding: 11px 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.shelter-primary-btn {
+  color: white;
+  background: #b91c1c;
+}
+
+.shelter-primary-btn:hover {
+  background: #991b1b;
+}
+
+.shelter-primary-btn:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.shelter-secondary-btn {
+  color: #344054;
+  background: #eef2f7;
+}
+
+.shelter-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.shelter-stat-card,
+.shelter-capacity-card,
+.shelter-form-card,
+.shelter-table-card {
+  background: #fff;
+  border: 1px solid #e7ebf1;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, .035);
+}
+
+.shelter-stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.shelter-stat-card span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.shelter-stat-card strong {
+  font-size: 29px;
+  line-height: 1.1;
+}
+
+.shelter-stat-card small,
+.shelter-table td small,
+.shelter-form-grid small {
+  color: #8994a5;
+  font-size: 11px;
+  display: block;
+  margin-top: 5px;
+}
+
+.shelter-capacity-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.shelter-capacity-card h3,
+.shelter-form-heading h3,
+.shelter-table-heading h3 {
+  margin: 0 0 7px;
+  font-size: 16px;
+}
+
+.shelter-capacity-card p {
+  margin: 0;
+  color: #718096;
+  font-size: 13px;
+}
+
+.shelter-capacity-card > strong {
+  font-size: 22px;
+}
+
+.shelter-progress-track,
+.shelter-mini-track {
+  overflow: hidden;
+  background: #e9edf3;
+  border-radius: 99px;
+}
+
+.shelter-progress-track {
+  grid-column: 1 / -1;
+  height: 9px;
+}
+
+.shelter-progress-fill,
+.shelter-mini-fill {
+  height: 100%;
+  background: #0d9488;
+  border-radius: inherit;
+  transition: width .2s ease;
+}
+
+.shelter-form-card,
+.shelter-table-card {
+  min-width: 0;
+}
+
+.shelter-form-heading {
+  margin-bottom: 20px;
+}
+
+.shelter-close-btn {
+  border: 0;
+  border-radius: 8px;
+  background: #f1f5f9;
+  padding: 8px 11px;
+  cursor: pointer;
+}
+
+.shelter-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.shelter-form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #475569;
+}
+
+.shelter-form-grid input,
+.shelter-form-grid select,
+.shelter-search {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d9e0e9;
+  border-radius: 8px;
+  padding: 11px 12px;
+  outline: none;
+  background: white;
+  color: #172033;
+  font: inherit;
+  font-size: 13px;
+}
+
+.shelter-form-grid input:focus,
+.shelter-form-grid select:focus,
+.shelter-search:focus {
+  border-color: #b91c1c;
+  box-shadow: 0 0 0 3px rgba(185, 28, 28, .08);
+}
+
+.shelter-full-width {
+  grid-column: 1 / -1;
+}
+
+.shelter-form-actions {
+  justify-content: flex-end;
+  margin-top: 22px;
+}
+
+.shelter-table-heading {
+  margin-bottom: 20px;
+}
+
+.shelter-search {
+  max-width: 260px;
+}
+
+.shelter-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.shelter-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 12px;
+}
+
+.shelter-table th {
+  padding: 13px 12px;
+  color: #64748b;
+  background: #f8fafc;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  white-space: nowrap;
+}
+
+.shelter-table td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #edf0f4;
+  vertical-align: middle;
+}
+
+.shelter-table td strong {
+  font-size: 12px;
+}
+
+.shelter-table td small {
+  max-width: 210px;
+  overflow-wrap: anywhere;
+}
+
+.shelter-mini-track {
+  width: 80px;
+  height: 5px;
+  margin-top: 7px;
+}
+
+.shelter-status {
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 99px;
+  font-size: 10px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.shelter-status.open {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.shelter-status.full {
+  background: #ffedd5;
+  color: #9a3412;
+}
+
+.shelter-status.closed {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.shelter-row-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-width: 175px;
+}
+
+.shelter-row-actions button {
+  border: 1px solid #dbe2eb;
+  background: white;
+  color: #334155;
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.shelter-row-actions button:hover {
+  background: #f1f5f9;
+}
+
+.shelter-row-actions .shelter-delete-btn {
+  color: #b91c1c;
+  border-color: #fecaca;
+}
+
+.shelter-message {
+  padding: 12px 15px;
+  border-radius: 9px;
+  font-size: 13px;
+}
+
+.shelter-error {
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+.shelter-success {
+  color: #166534;
+  background: #dcfce7;
+}
+
+.shelter-empty {
+  padding: 35px 15px;
+  text-align: center;
+  color: #718096;
+  font-size: 13px;
+}
+
+.shelter-empty h3 {
+  color: #334155;
+}
+
+.shelter-empty span {
+  font-size: 30px;
+}
+
+@media (max-width: 1000px) {
+  .shelter-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .shelter-table-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .shelter-search {
+    max-width: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .shelters-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .shelters-heading-actions {
+    width: 100%;
+  }
+
+  .shelters-heading-actions button {
+    flex: 1;
+  }
+
+  .shelter-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .shelter-stat-card,
+  .shelter-capacity-card,
+  .shelter-form-card,
+  .shelter-table-card {
+    padding: 14px;
+  }
+
+  .shelter-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shelter-full-width {
+    grid-column: auto;
+  }
+}

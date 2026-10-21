@@ -1,0 +1,161 @@
+.ds-auth-page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+  background: linear-gradient(135deg, #edf4f8, #dceaf2);
+}
+
+.ds-auth-card {
+  width: 100%;
+  max-width: 480px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto;
+  padding: 32px;
+  border: 1px solid rgba(214, 224, 232, 0.8);
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 12px 40px rgb(16 42 67 / 12%);
+}
+
+.ds-auth-logo {
+  align-self: center;
+  margin-bottom: 4px;
+  font-size: 40px;
+}
+
+.ds-auth-eyebrow {
+  margin: 0;
+  color: #176b87;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.ds-auth-card h1 {
+  margin: 8px 0;
+  color: #102a43;
+  text-align: center;
+  font-size: 27px;
+  line-height: 1.3;
+}
+
+.ds-auth-subtitle {
+  margin: 0 0 16px;
+  color: #66758a;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ds-auth-card label {
+  margin-top: 4px;
+  color: #27384a;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ds-auth-card input,
+.ds-auth-card textarea {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #d6e0e8;
+  border-radius: 9px;
+  outline: none;
+  background: #ffffff;
+  color: #102a43;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.ds-auth-card input:focus,
+.ds-auth-card textarea:focus {
+  border-color: #176b87;
+  box-shadow: 0 0 0 3px rgb(23 107 135 / 10%);
+}
+
+.ds-auth-card textarea {
+  resize: vertical;
+}
+
+/* All buttons use the same blue background and white text */
+.ds-auth-card button {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 12px;
+  padding: 13px;
+  border: 1px solid #176b87;
+  border-radius: 9px;
+  background: #176b87;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.ds-auth-card button:hover:not(:disabled) {
+  background: #102a43;
+  border-color: #102a43;
+  color: #ffffff;
+}
+
+.ds-auth-card button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+/* Registration and back buttons also remain blue */
+.ds-auth-card .ds-auth-secondary {
+  margin-top: 0;
+  border: 1px solid #176b87;
+  background: #176b87;
+  color: #ffffff;
+}
+
+.ds-auth-card .ds-auth-secondary:hover:not(:disabled) {
+  background: #102a43;
+  border-color: #102a43;
+  color: #ffffff;
+}
+
+.ds-auth-error,
+.ds-auth-success {
+  padding: 11px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.ds-auth-error {
+  background: #fff0f0;
+  color: #a52a2a;
+}
+
+.ds-auth-success {
+  background: #e9f8ef;
+  color: #176b45;
+}
+
+@media (max-width: 480px) {
+  .ds-auth-page {
+    padding: 20px 12px;
+    place-items: start center;
+  }
+
+  .ds-auth-card {
+    padding: 25px 20px;
+  }
+
+  .ds-auth-card h1 {
+    font-size: 24px;
+  }
+}
